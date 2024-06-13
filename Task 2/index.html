@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <header id="hdr">Header
+        <span><strong>
+                <h1>Shriniwas Vaibhav Kulkarni SYAIMLA37</h1>
+            </strong></span>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h4>This is simple HTML webpage created as submission for Task 2 for Python FullStack Course by <strong>
+                    <h1>PCCOE<>Quantiphi</h1>
+                </strong></h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id porro eligendi incidunt sed dolor enim
+                dolorum optio fugit iure facere illo delectus necessitatibus placeat aspernatur expedita, aliquid,
+                aliquam rerum debitis! Suscipit laudantium placeat optio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis natus voluptate ab neque modi vitae,
+                in enim eaque eum quaerat quos voluptatum dolorum soluta pariatur dolores, dolorem eligendi iure eos
+                unde aspernatur!</p>
+            <section id="content">
+                <ol class="card">
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, sed.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, dolorem deleniti?</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ol>
+                <ul class="card">
+                    <li>lorem2</li>
+                    <li>lorem2</li>
+                    <li>lorem2</li>
+                    <li>lorem2</li>
+                    <li>lorem2</li>
+                </ul>
+            </section>
+        </section>
+    </main>
+    <footer>Footer</footer>
+    <button id="btn">Button</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+
+        //    $(selector).action()
+
+        $(document).ready(()=>console.log('jquery loaded'))
+
+        // selectors are like classname e.g.     .heading   .btn 
+        // selectors are like ids e.g.      #btn #header
+        // selectors can be tagnames              div , section ,button
+        // selectors can be nested class names
+
+        // we follow BEM methodlogy to name selectors
+        $("#btn").click(()=>{
+            $(".card").css("background","green" ? "red":"green");
+            $(".card").toggle();
+        });
+    </script>
+</body>
+
+</html>
